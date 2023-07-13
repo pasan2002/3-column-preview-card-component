@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.card h1{
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.card p{
+    font-family: "Lexend Deca";
+    font-size: 13px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+                                                    
+}
+
+.card:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+button{
+    padding: 8px 16px;
+    font-family: "Lexend Deca";
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    border-style: none;
+}
+
+#btn1{
+    color:  hsl(31, 77%, 52%);
+}
+
+#btn2{
+    color:  hsl(184, 100%, 22%);
+}
+
+#btn3{
+    color:  hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width:600px){
+    #container{
+        margin: 10px 0px 10px 0px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card{
+        border-radius: 0 !important;
+        height: 400px !important;
+    }
+
+    .card:nth-child(1){    
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+    }
+
+    .card:nth-child(3){
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+        
+    }
+}
